@@ -1,0 +1,32 @@
+stages:
+  - deploy
+
+variables:
+  GIT_STRATEGY: none
+
+before_script:
+  - rm -rf ~/.ssh
+  - mkdir -p ~/.ssh
+  - echo -e "$DEPLOY_KEY" > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+
+deploy-production:
+  stage: deploy
+
+  script:
+    - ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST -p $SSH_PORT "
+      echo -e \"Host *\n\tStrictHostKeyChecking no\n\n\" > ~/.ssh/config &&
+      chmod 600 ~/.ssh/config &&
+      git config --global user.name "$GIT_USER_NAME" &&
+      git config --global user.email "$GIT_USER_EMAIL" &&
+      cd www &&
+      yo lgs-wp:pull &&
+      yo lgs-wp:clone --giturl=$GIT_URL --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$DB_PASS --dbhost=$DB_HOST --dbprefix=$DB_PREFIX --url=$URL
+      "
+
+  environment:
+    name: Production
+    url: $URL
+
+  only:
+    - master
