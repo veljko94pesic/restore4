@@ -1,0 +1,171 @@
+# Translation services
+icl_core_status:
+  table: icl_core_status
+  id: id
+
+icl_content_status:
+  table: icl_content_status
+  id: rid
+  references:
+    nid: icl_node
+
+icl_string_status:
+  table: icl_string_status
+  id: id
+  references:
+    string_translation_id: icl_string_translation
+
+icl_node:
+  table: icl_node
+  id: nid
+
+icl_reminder:
+  table: icl_reminders
+  id: id
+
+# Languages info
+icl_flag:
+  table: icl_flags
+  id: id
+
+icl_language:
+  table: icl_languages
+  id: id
+
+icl_languages_translation:
+  table: icl_languages_translations
+  id: id
+
+icl_locale_map:
+  table: icl_locale_map
+  id: id
+
+# Translations
+icl_mo_files_domain:
+  table: icl_mo_files_domains
+  id: id
+
+icl_string:
+  table: icl_strings
+  id: id
+  references:
+    string_package_id: icl_string_package
+    context:
+      pattern: 'page-builder-shortcode-strings-%d'
+      reference:
+        - post
+
+icl_string_package:
+  table: icl_string_packages
+  id: ID
+  references:
+    name: post
+    title:
+      pattern: 'Page Builder Page %d'
+      reference:
+        - post
+    post_id: post
+
+icl_string_position:
+  table: icl_string_positions
+  id: id
+  references:
+    string_id: icl_string
+
+icl_string_translation:
+  table: icl_string_translations
+  id: id
+  references:
+    string_id: icl_string
+    translator_id: user
+    batch_id: icl_translation_batch
+
+icl_translate:
+  table: icl_translate
+  id: tid
+  references:
+    job_id: icl_translate_job
+    field_type:
+      - pattern: 'package-string-%d-%d'
+        reference:
+          - icl_string_package
+          - icl_string
+      - pattern: 'media_%d_%*'
+        reference:
+          - post
+
+  value-references:
+    field_type@field_data:
+      original_id: post
+    field_type@field_data_translated:
+      original_id: post
+
+icl_translate_job:
+  table: icl_translate_job
+  id: job_id
+  references:
+    rid: icl_translation_status
+    translator_id: user
+    manager_id: user
+
+icl_translation:
+  table: icl_translations
+  id: translation_id
+  value-references:
+    element_type@element_id:
+      post_*: post
+      tax_*: term_taxonomy
+      package_*: icl_string_package
+      comment: comment
+
+icl_translation_batch:
+  table: icl_translation_batches
+  id: id
+
+icl_translation_status:
+  table: icl_translation_status
+  id: rid
+  references:
+    translation_id: icl_translation
+    translator_id: user
+    batch_id: icl_translation_batch
+  ignored-columns:
+    - translation_package
+    - _prevstate
+
+icl_message_status:
+  table: icl_message_status
+  id: id
+  value-references:
+    object_type@object_id:
+      post_*: post
+      tax_*: term_taxonomy
+      package_*: icl_string_package
+      comment: comment
+
+postmeta:
+  value-references:
+    meta_key@meta_value:
+      _wpml_media_usage["posts"][/\d+/]: post
+
+option:
+  value-references:
+    option_name@option_value:
+      wpml_language_switcher["menus"][/\d+/]["-WPML_LS_Slot->properties"]["slot_slug"]:
+        reference: term
+        key-id:
+          reference: term
+          index: 2
+  ignored-entities:
+    - 'option_name: wpml_prefix_hash'
+    - 'option_name: wpml_trid_count'
+    - 'option_name: wpml_language_switcher_template_objects'
+    - 'option_name: _icl_cache'
+    - 'option_name: _wpml_batch_report'
+    - 'option_name: wp_installer_settings'
+    - 'option_name: wpml_config_index_updated'
+    - 'option_name: wpml_tp_com_log'
+    - 'option_name: wpml_translation_services'
+    - 'option_name: wpml_translation_services_timestamp'
+    - 'option_name: _wpml_transient__wpml_st_mo_scan_in_progress'
+    - 'option_name: otgs_active_components'

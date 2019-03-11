@@ -1,0 +1,106 @@
+{
+    "English": {
+        "major": 1,
+        "tr": {
+            "English": "English",
+            "German": "Englisch",
+            "French": "Anglais",
+            "Bosnian": "Engleski",
+            "Croatian": "Engleski",
+            "Russian": "\u0410\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439",
+            "Slovenian": "Angle\u0161\u010dina",
+            "Serbian": "\u0435\u043d\u0433\u043b\u0435\u0441\u043a\u0438"
+        }
+    },
+    "German": {
+        "major": 1,
+        "tr": {
+            "English": "German",
+            "German": "Deutsch",
+            "French": "Allemand",
+            "Bosnian": "Njema\u010dki",
+            "Croatian": "Njema\u010dki",
+            "Russian": "\u041d\u0435\u043c\u0435\u0446\u043a\u0438\u0439",
+            "Slovenian": "Nem\u0161\u010dina",
+            "Serbian": "\u043d\u0435\u043c\u0430\u0447\u043a\u0438"
+        }
+    },
+    "French": {
+        "major": 1,
+        "tr": {
+            "English": "French",
+            "German": "Franz\u00f6sisch",
+            "French": "Fran\u00e7ais",
+            "Bosnian": "Francuski",
+            "Croatian": "Francuzi",
+            "Russian": "\u0424\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0438\u0439",
+            "Slovenian": "Franco\u0161\u010dina",
+            "Serbian": "\u0444\u0440\u0430\u043d\u0446\u0443\u0441\u043a\u0438"
+        }
+    },
+    "Bosnian": {
+        "major": 0,
+        "tr": {
+            "English": "Bosnian",
+            "German": "Bosnisch",
+            "French": "Bosnien",
+            "Bosnian": "Bosanski",
+            "Croatian": "Bosanski",
+            "Russian": "\u0411\u043e\u0441\u043d\u0438\u0439\u0441\u043a\u0438\u0439",
+            "Slovenian": "Bosanski",
+            "Serbian": "\u0431\u043e\u0441\u0430\u043d\u0441\u043a\u0438"
+        }
+    },
+    "Croatian": {
+        "major": 0,
+        "tr": {
+            "English": "Croatian",
+            "German": "Kroatisch",
+            "French": "Croate",
+            "Bosnian": "Hrvatski",
+            "Croatian": "Hrvatski",
+            "Russian": "\u0425\u043e\u0440\u0432\u0430\u0442\u0441\u043a\u0438\u0439",
+            "Slovenian": "Hrva\u0161ki",
+            "Serbian": "\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438"
+        }
+    },
+    "Russian": {
+        "major": 1,
+        "tr": {
+            "English": "Russian",
+            "German": "Russisch",
+            "French": "Russe",
+            "Bosnian": "Ruski",
+            "Croatian": "Ruski",
+            "Russian": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+            "Slovenian": "Ru\u0161\u010dina",
+            "Serbian": "\u0440\u0443\u0441\u043a\u0438"
+        }
+    },
+    "Slovenian": {
+        "major": 0,
+        "tr": {
+            "English": "Slovenian",
+            "German": "Slowenisch",
+            "French": "Slov\u00e8ne",
+            "Bosnian": "Slovena\u010dki",
+            "Croatian": "Slovenac",
+            "Russian": "\u0421\u043b\u043e\u0432\u0435\u043d\u0441\u043a\u0438\u0439",
+            "Slovenian": "Sloven\u0161\u010dina",
+            "Serbian": "\u0441\u043b\u043e\u0432\u0435\u043d\u0430\u0447\u043a\u0438"
+        }
+    },
+    "Serbian": {
+        "major": 0,
+        "tr": {
+            "English": "Serbian",
+            "German": "Serbisch",
+            "French": "Serbe",
+            "Bosnian": "Srpski",
+            "Croatian": "Srpski",
+            "Russian": "\u0421\u0435\u0440\u0431\u0441\u043a\u0438\u0439",
+            "Slovenian": "Srbski",
+            "Serbian": "\u0441\u0440\u043f\u0441\u043a\u0438"
+        }
+    }
+}

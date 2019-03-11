@@ -4,3 +4,4 @@
 define( 'WP_POST_REVISIONS' , false );
 define( 'AUTOSAVE_INTERVAL' , 300 );
 define( 'WP_AUTO_UPDATE_CORE' , false );
+define( 'OTGS_DISABLE_AUTO_UPDATES' , true);

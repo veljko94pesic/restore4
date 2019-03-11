@@ -1,0 +1,183 @@
+# Translation services
+icl_core_status:
+  actions:
+    create: Created core status
+    update:
+      message: Updated core status
+      priority: 12
+    delete: Deleted core status
+
+icl_content_status:
+  actions:
+    create: Created content status
+    update:
+      message: Updated content status
+      priority: 12
+    delete: Deleted content status
+
+icl_string_status:
+  actions:
+    create: Created string status
+    update:
+      message: Updated string status
+      priority: 12
+    delete: Deleted string status
+
+icl_node:
+  actions:
+    create: Created node
+    update:
+      message: Updated node
+      priority: 12
+    delete: Deleted node
+
+icl_reminder:
+  actions:
+    create: Created reminder
+    update:
+      message: Updated reminder
+      priority: 12
+    delete: Deleted reminder
+
+# Languages info
+icl_flag:
+  tags:
+    VP-Language-Code: lang_code
+  actions:
+    create: Created flag for '%VP-Language-Code%' language code
+    update:
+      message: Updated flag for '%VP-Language-Code%' language code
+      priority: 12
+    delete: Deleted flag for '%VP-Language-Code%' language code
+
+icl_language:
+  tags:
+    VP-Language: english_name
+  actions:
+    create: Created '%VP-Language%' language
+    update:
+      message: Updated '%VP-Language%' language
+      priority: 12
+    delete: Deleted '%VP-Language%' language
+
+icl_languages_translation:
+  tags:
+    VP-Language: name
+  actions:
+    create: Created languages translations for '%VP-Language%'
+    update:
+      message: Updated languages translations for '%VP-Language%'
+      priority: 12
+    delete: Deleted languages translations for '%VP-Language%'
+
+icl_locale_map:
+  tags:
+    VP-Locale: locale
+  actions:
+    create: Created locale map for '%VP-Locale%'
+    update:
+      message: Updated locale map for '%VP-Locale%'
+      priority: 12
+    delete: Deleted locale map for '%VP-Locale%'
+
+# Translations
+icl_mo_files_domain:
+  actions:
+    create: Created mo file domain
+    update:
+      message: Updated mo file domain
+      priority: 12
+    delete: Deleted mo file domain
+
+icl_string:
+  tags:
+    VP-Language: language
+  actions:
+    create: Created string for '%VP-Language%' language
+    update:
+      message: Updated string for '%VP-Language%' language
+      priority: 12
+    delete: Deleted string for '%VP-Language%' language
+
+icl_string_package:
+  actions:
+    create: Created string package
+    update:
+      message: Updated string package
+      priority: 12
+    delete: Deleted string package
+
+icl_string_position:
+  actions:
+    create: Created string position item
+    update:
+      message: Updated string position item
+      priority: 12
+    delete: Deleted string position item
+
+icl_string_translation:
+  tags:
+    VP-Language: language
+  actions:
+    create: Created string translation for '%VP-Language%' language
+    update:
+      message: Updated string translation for '%VP-Language%' language
+      priority: 12
+    delete: Deleted string translation for '%VP-Language%' language
+
+icl_translate:
+  tags:
+    VP-Field-Type: field_type
+  actions:
+    create: Created translation for '%VP-Field-Type%' field type
+    update:
+      message: Updated translation for '%VP-Field-Type%' field type
+      priority: 12
+    delete: Deleted translation for '%VP-Field-Type%' field type
+
+icl_translate_job:
+  tags:
+    VP-Post-Title: title
+  actions:
+    create: Created translation job for '%VP-Post-Title%'
+    update:
+      message: Updated translation job for '%VP-Post-Title%'
+      priority: 12
+    delete: Deleted translation job for '%VP-Post-Title%'
+
+icl_translation:
+  tags:
+    VP-Element-Type: element_type
+    VP-Language-Code: language_code
+  actions:
+    create: Created '%VP-Element-Type%' translation for '%VP-Language-Code%' language
+    update:
+      message: Updated '%VP-Element-Type%' translation for '%VP-Language-Code%' language
+      priority: 12
+    delete: Deleted '%VP-Element-Type%' translation for '%VP-Language-Code%' language
+
+icl_translation_batch:
+  tags:
+    VP-Batch-Name: batch_name
+  actions:
+    create: Created batch '%VP-Batch-Name%'
+    update:
+      message: Updated batch '%VP-Batch-Name%'
+      priority: 12
+    delete: Deleted batch '%VP-Batch-Name%'
+
+icl_translation_status:
+   actions:
+    create: Created translation status
+    update:
+      message: Updated translation status
+      priority: 12
+    delete: Deleted translation status
+
+icl_message_status:
+  actions:
+    create: Created message status
+    update:
+      message: Updated message status
+      priority: 12
+    delete: Deleted message status
